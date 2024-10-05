@@ -2,9 +2,8 @@
 __pycache__/
 
 # Environments
-.env
-.venv
-env/
+
+virt/
 venv/
 ENV/
 env.bak/
