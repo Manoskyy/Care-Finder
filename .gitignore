@@ -2,7 +2,10 @@
 __pycache__/
 
 # Environments
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5021ffe4d0bfd18c578b7f5f97dcf69496cf10f0
 virt/
 venv/
 ENV/
