@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: #ece6e6;
+}
+
+.main-container{
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.left-side{
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    height: 80vh;
+    background-color: #fffdfd;
+}
+
+    .logo{
+        color: gold;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+    }
+
+    .info p{
+        color: #888888;
+        width: 100%;
+    }
+
+    form{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    form label{
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+
+    form input{
+       width: 100%;
+        padding: 15px 10px;
+        border: 1px solid #a7a6a6;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: 0;
+        margin-top: 10px;
+    }
+
+    label{
+        margin-left: 10px;;
+    }
+
+    .names-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .names{
+        width: 100%;
+        
+    }
+
+    form input::placeholder{
+        color: rgb(94, 94, 94);
+    }
+
+    form .submit button{
+        width: 100%;
+        padding: 15px 10px;
+        color: #fff;
+        outline: 0;
+        border: 1px solid #f8d09c;
+        font-size: 16px;
+        background-color: #ba6a01;
+        border-radius: 50px;
+    }
+
+    form #middle{
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+    }
+
+    form .sign-links{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+    }
+
+    form .sign-links button{
+        padding: 10px;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #a7a6a6;
+        
+
+    }
+
+    form .sign-links button img{
+        width: 20%;
+        padding-right: 5px;
+    }
+
+.right-side{
+    width: 60%;
+    height:80vh;
+    border-radius: 5%;
+    background-color: brown;
+}
