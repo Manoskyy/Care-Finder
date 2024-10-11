@@ -7,8 +7,4 @@ __pycache__/
 =======
 >>>>>>> 5021ffe4d0bfd18c578b7f5f97dcf69496cf10f0
 virt/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
+.env
