@@ -3,48 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
-    <title>Sign Up</title>
+    <link rel="stylesheet" href="./signup.css">
+    <title>Care-Finder | Sign up to our official care finder website ....</title>
+    <link rel="shortcut icon" href="./signup.png" type="image/x-icon">
 </head>
 <body>
-    <div class="main-container">
-        <div class="left-side">
-            <div class="logo">Care Finder</div>
+    <div class="mainContainer">
+        <div class="leftSide">
+            <div class="logo"><h1>Care Finder</h1></div>
             <div class="info">
                 <h1>Welcome to Care Finder!</h1>
-                <p>New to Finders! Sign up to enjoy authentic and <br>the most reliable technological health care. The Future is Here Enjoy it!</p>
+                <p>Welcome back Finders! Enjoy exciting moments from <br>various extraordinary genres. Enjoy the fun!</p>
             </div>
-            <form action="post">
-                <div class="names-box">
+            <div class="pagebtns">
+                <div class="switchbtns">
+                    <a href="../Sign Up/signup.html" class="firstlink" onclick="changebg()">Sign Up</a>
+                    <a href="../Log in/login.html" class="secondlink" >Log In</a>
+                </div>   
+            </div>             
+
+            <form method="post">
+                <div class="name-input">
                     <div>
-                        <label for="">Firstname</label>
-                        <input type="text" placeholder="Enter your firstname" class="names" required>
+                        <label for="Fname">First Name</label>
+                        <input type="text" placeholder="First Name" style="margin-top: 3px;" required>
                     </div>
                     <div>
-                        <label for="">Lastname</label>
-                        <input type="text" placeholder="Enter your lastname" class="names" required>
+                        <label for="lname">Last Name</label>
+                        <input type="text" placeholder="Last Name" style="margin-top: 3px;" required>
                     </div>
                 </div>
-                <div>
-                    <label for="">Username</label>
-                    <input type="text" placeholder="Enter your username" required>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" id="email" required>
                 </div>
-                <div>
-                    <label for="">Email</label>
-                    <input type="text" placeholder="Enter your Email" required>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="Password" id="initial" required name="password" placeholder="Enter your password" id="password">
+                    <!-- <div class="icon"></div> -->
                 </div>
-                <div>
-                    <label for="">Password</label>
-                    <input type="password" name="" id="" placeholder="Enter new password" required>
+                <div class="input-box">
+                    <label for="password2">Confirm Password</label>
+                    <input type="Password" id="final" required name="password2" placeholder="Enter your password" id="password2">
+                    <!-- <div class="icon"></div> -->
                 </div>
                 <div class="submit">
-                    <button type="submit">Sign Up</button>
+                    <button type="submit" onclick="confirmPass()">Sign Up</button>
                 </div>
-                <p>Already have an account? <a href="login.html">Log In</a></p>
+                <!-- <p id="middle">Or Sign Up with</p> -->
+                 <fieldset>
+                    <legend>Or Sign Up with</legend>    
+                    <div class="sign-links">
+                        <button><p><img src="../images/search.png" alt="">Google</p></button>
+                        <button><p><img src="../images/apple-logo.png" alt="">Apple</p></button>
+                        <button><p><img src="../images/facebook.png" alt="">Facebook</p></button>
+                    </div>
+                 </fieldset>
+                
+
             </form>
         </div>
-        <div class="right-side">
-        </div>
+        <div class="rightSide"></div>
     </div>
+    <script src="./signup.js"></script>
 </body>
 </html>
