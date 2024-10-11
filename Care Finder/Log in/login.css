@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    font-family:sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid black ;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+
+
+.pagebtns {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.switchbtns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3px;
+    background-color: #999;
+    border-radius: 50px;
+    border: 1px solid #999;
+
+}
+
+.switchbtns a{
+    padding: 10px 60px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+
+}
+
+.switchbtns a:nth-child(2){
+    color:#555;
+}
+
+.switchbtns .secondlink{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.385);
+}
+
+/* .switchbtns .firstlink:focus{
+    background-color: #fff;
+    color:black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.385);
+} */
+
+/* .switchbtns .firstlink:focus ~ .switchbtns .secondlink{
+    color:#555;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    background-color: none;
+    box-shadow: none;
+} */
+
+/* .switchbtns .secondlink{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.385);
+}
+
+.switchbtns a:hover{
+    
+} */
+
+.leftSide{
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fffdfd;
+}
+
+    .logo h1{
+        margin-top: 20px;
+        color: goldenrod;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    fieldset{
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+
+    }
+
+    fieldset legend{
+        text-align: center;
+        padding: 0px 10px;
+        padding-bottom: 15px;
+    }
+
+    fieldset .sign-links{
+        margin-top: 10px;
+    }
+
+    fieldset .sign-links button{
+        width: 100%;
+        height: 40px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: transform 0.3s;
+        border: 1px solid rgba(0, 0, 0, 0.336);
+    }
+
+    fieldset .sign-links button:hover{
+        transform: translateX(5px);
+    }
+
+    fieldset .sign-links button p{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .icon{
+        position: absolute;
+        width: 20px;
+        z-index: 2000;
+        border-radius: 30%;
+        cursor: pointer;
+
+        left: 36%;
+        top: 424px;
+        border: 2px solid black;
+        background-color: #ffffff;
+        height: 15px;
+    }
+    .icon:hover{
+        position: absolute;
+        width: 20px;
+        z-index: 2000;
+        border-radius: 30%;
+        cursor: pointer;
+
+        left: 36%;
+        top: 424px;
+        border: 2px solid black;
+        background-color: #eae9e9;
+        height: 15px;
+    }
+
+    fieldset .sign-links button p img{
+        width: 20px;
+    }
+
+    .logo{
+        color: gold;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+    }
+
+    .info p{
+        color: #888888;
+        width: 100%;
+    }
+
+    form{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    form label{
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+
+    form input{
+        width: 100%;
+        padding: 15px 10px;
+        border: 1px solid #a7a6a6;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: 0;
+        padding-left:25px;
+        font: 1em sans-serif;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.166);
+    }
+
+    form input:focus{
+        border: 1px solid #606060;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.166);
+        background-color: #f3f0f0;
+    }
+
+    form input::placeholder{
+        color: rgb(94, 94, 94);
+        font-size: 14px;
+    }
+
+    form .submit button{
+        width: 100%;
+        padding: 15px 10px;
+        color: #fff;
+        outline: 0;
+        cursor: pointer;
+        border: 1px solid #f8d09c;
+        font-size: 16px;
+        background-color: #ba6a01;
+        border-radius: 50px;
+    }
+
+    form .submit button:hover{
+        background-color: #ba6a01d5;
+    }
+
+    form .submit button:active{
+        background-color: #351e01b8;
+        border: 1px solid transparent;
+    }
+
+    /* form #middle{
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+    } */
+
+.rightSide{
+    border-radius: 5%;
+    background-color: brown;
+}
+
